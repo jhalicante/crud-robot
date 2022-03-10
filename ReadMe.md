@@ -22,6 +22,7 @@ Swagger URL: `http://localhost:3001/api-docs/`;
 React JS, Typescript(TSX), and TailwindCSS for the Design
 
 Additional: `TailwindCSS` `Typescript(TSX)`
+
 Browser: `http://localhost:3000/`;
 
 ### Added Idea 😁 ✌️
