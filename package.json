@@ -1,0 +1,14 @@
+{
+  "name": "robot-crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jhalicante/crud-robot.git",
+  "author": "John Mark Alicante <john.alicante@intelegencia.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"cd ./server && yarn start:dev\" \"cd .. && cd ./client && yarn start\" "
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
