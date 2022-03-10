@@ -22,12 +22,6 @@ export class RobotInfoController {
     return this.robotInfoService.findAll();
   }
 
-  @Get(':robotId')
-  @ApiOperation({ summary: 'Fetch created robot by Id' })
-  public async findOne(@Param('robotId') robotId: string): Promise<IResponseHandlerParams> {
-    return this.robotInfoService.findById(robotId);
-  }
-
   @Patch(':robotId')
   @ApiOperation({ summary: 'Update the created robot information' })
   public async update(@Param('robotId') robotId: string, @Body() updateRobotInfoDto: UpdateRobotInfoDto): Promise<IResponseHandlerParams> {

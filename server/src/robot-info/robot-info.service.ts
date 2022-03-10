@@ -95,41 +95,6 @@ export class RobotInfoService {
     }
   }
 
-  public async findById(robotId: string): Promise<IResponseHandlerParams> {
-    try {
-      const robotInfo: RobotInfoEntity = await getRepository(RobotInfoEntity)
-        .createQueryBuilder('robot_info')
-        // .leftJoin('robot_info.collaboratorMember', 'collaborator_member')
-        // .leftJoinAndSelect('collaborator_member.robotInfo', 'as')
-        .select()
-        .where('robot_info.robotId = :robotId ', {
-          robotId,
-        })
-        .getOne();
-
-      if (isEmpty(robotInfo)) {
-        return ResponseHandlerService({
-          success: false,
-          httpCode: HttpStatus.NOT_FOUND,
-          message: 'No result found',
-        });
-      }
-
-      return ResponseHandlerService({
-        success: true,
-        httpCode: HttpStatus.OK,
-        data: robotInfo,
-      });
-    } catch (error) {
-      return ResponseHandlerService({
-        success: false,
-        httpCode: HttpStatus.INTERNAL_SERVER_ERROR,
-        message: 'Unable to process your data. Please check',
-        errorDetails: error,
-      });
-    }
-  }
-
   public async update(robotId: string, body: UpdateRobotInfoDto): Promise<IResponseHandlerParams> {
     try {
       await getRepository(RobotInfoEntity)
