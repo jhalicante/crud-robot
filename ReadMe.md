@@ -5,8 +5,10 @@ track your bots. Each robot has a name and a purpose.
 
 You must be able to browse (list), read (view), edit, add, and delete a robot.
 
-### Backend
+### Backend Tech
 
-### Visit Demo Online
+in NestJS, Typescript, REST API, TypeORM, MySQL and Swagger API Document
 
-You may be using [Crud](https://markdownlivepreview.com/).
+### Frontend Tech
+
+React JS, Typescript(TSX), and TailwindCSS for the Design
