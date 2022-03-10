@@ -7,7 +7,7 @@ You must be able to browse (list), read (view), edit, add, and delete a robot.
 
 ### Backend Tech
 
-in NestJS, Typescript, REST API, TypeORM, MySQL and Swagger API Document
+NodeJS, Express, NestJS Framework, Typescript, REST API, TypeORM, MySql and Swagger API Document
 
 ### Frontend Tech
 
